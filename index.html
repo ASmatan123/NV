@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NV Security | אתר ההורדות הרשמי</title>
+    <style>
+        :root {
+            --primary: #FF4B2B;
+            --secondary: #1a1a1a;
+            --accent: #2ECC71;
+            --text: #ffffff;
+            --bg: #0a0a0a;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        /* אפקט רקע */
+        .glow {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(255, 75, 43, 0.1) 0%, rgba(0,0,0,0) 70%);
+            z-index: -1;
+            filter: blur(80px);
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 50px;
+            border-radius: 30px;
+            text-align: center;
+            box-shadow: 0 40px 100px rgba(0,0,0,0.8);
+            max-width: 600px;
+            width: 90%;
+        }
+
+        .logo-img {
+            width: 140px;
+            height: 140px;
+            margin-bottom: 20px;
+            border-radius: 25px;
+            box-shadow: 0 10px 30px rgba(255, 75, 43, 0.3);
+            border: 2px solid rgba(255, 255, 255, 0.1);
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin: 10px 0;
+            letter-spacing: -1px;
+            background: linear-gradient(45deg, #FF4B2B, #FF9068);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        p {
+            font-size: 1.2rem;
+            color: #b0b0b0;
+            margin-bottom: 40px;
+            line-height: 1.6;
+        }
+
+        .download-btn {
+            display: inline-block;
+            background-color: var(--primary);
+            color: white;
+            padding: 18px 50px;
+            font-size: 1.4rem;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 15px;
+            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            box-shadow: 0 15px 35px rgba(255, 75, 43, 0.3);
+        }
+
+        .download-btn:hover {
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 0 20px 45px rgba(255, 75, 43, 0.5);
+            background-color: #ff6045;
+        }
+
+        .info-box {
+            margin-top: 40px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            text-align: right;
+        }
+
+        .info-item {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 12px;
+            border-radius: 12px;
+            font-size: 0.9rem;
+            color: #888;
+        }
+
+        .info-item b {
+            color: var(--accent);
+            display: block;
+            margin-bottom: 3px;
+        }
+
+        footer {
+            margin-top: 30px;
+            color: #444;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="glow"></div>
+
+    <div class="container">
+        <img src="logo.ico" alt="NV Logo" class="logo-img">
+        
+        <h1>NV Security</h1>
+        <p>האנטי-וירוס הקל והמהיר ביותר למחשב שלך.<br>מגן בזמן אמת, סורק Turbo ותמיכה מלאה בעברית.</p>
+
+        <a href="NV.zip" class="download-btn" download="NV.zip">
+            הורד עכשיו (NV.zip)
+        </a>
+
+        <div class="info-box">
+            <div class="info-item">
+                <b>גרסה נוכחית:</b>
+                v1.0.0 Stable
+            </div>
+            <div class="info-item">
+                <b>דרישות מערכת:</b>
+                Windows 10 / 11
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        כל הזכויות שמורות מתן © 2026
+    </footer>
+
+</body>
+</html>
